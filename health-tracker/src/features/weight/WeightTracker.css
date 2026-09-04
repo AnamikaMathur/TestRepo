@@ -1,0 +1,110 @@
+.weight-stats-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  box-shadow: var(--shadow);
+}
+
+.stat-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: var(--text-muted);
+}
+
+.stat-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.stat-delta {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.stat-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.stat-delta.up { color: #ef4444; }
+.stat-delta.down { color: var(--success); }
+.stat-delta.flat { color: var(--text-muted); }
+
+.add-form-col {
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+
+.add-form-row {
+  display: flex;
+  gap: 12px;
+}
+
+.form-input-full {
+  width: 100%;
+}
+
+.form-select-sm {
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 13px;
+}
+
+.weight-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.weight-table th {
+  text-align: left;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.weight-table td {
+  padding: 12px 12px;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+}
+
+.weight-table tr:last-child td {
+  border-bottom: none;
+}
+
+.table-date { color: var(--text-muted); font-size: 13px; }
+.table-note { color: var(--text-muted); font-size: 13px; max-width: 200px; }
+
+.delta-chip {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 99px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.delta-chip.up { background: #fef2f2; color: #ef4444; }
+.delta-chip.down { background: #f0fdf4; color: #16a34a; }
+.delta-chip.flat { background: var(--bg); color: var(--text-muted); }

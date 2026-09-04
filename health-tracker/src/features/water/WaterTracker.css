@@ -1,0 +1,80 @@
+.progress-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow);
+}
+
+.progress-stats {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.progress-current {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.progress-of {
+  font-size: 15px;
+  color: var(--text-muted);
+}
+
+.progress-pct {
+  margin-left: auto;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.progress-pct.done {
+  color: var(--success);
+}
+
+.progress-bar-track {
+  height: 10px;
+  background: var(--bg);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), #818cf8);
+  border-radius: 99px;
+  transition: width .4s ease;
+  min-width: 0;
+}
+
+.goal-reached {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--success);
+  font-weight: 600;
+}
+
+.quick-add-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.quick-btn {
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  background: var(--primary-light);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 13px;
+  transition: background .15s;
+}
+
+.quick-btn:hover {
+  background: #dbeafe;
+}
